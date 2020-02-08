@@ -2,3 +2,8 @@
     margin: 20px auto;
     text-align: left;
 }
+
+.card-header {
+    font-size: 16pt;
+    font-weight: bold;
+}

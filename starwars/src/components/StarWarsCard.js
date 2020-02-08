@@ -6,7 +6,7 @@ const StarWarsCard = props => {
     // console.log(props);
 
     return (
-        <Col md="6" lg="4" xl="3">
+        <Col md="6" lg="4" xl="4">
             <Card>
                 <CardHeader>{props.names.name}</CardHeader>
                 <CardBody>
