@@ -19,7 +19,7 @@ const StarWarsNames = () => {
         .catch(error => console.log('there is an error', error));
     }, []);
 
-    // console.log('initial render', characters);
+    console.log('initial render', characters);
 
     return (
         <Container>
