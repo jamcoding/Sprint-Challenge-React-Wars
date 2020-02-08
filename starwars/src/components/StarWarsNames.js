@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Container, Row } from "reactstrap";
 import axios from "axios";
 import StarWarsCard from "./StarWarsCard";
 
@@ -18,14 +19,16 @@ const StarWarsNames = () => {
         .catch(error => console.log('there is an error', error));
     }, []);
 
-    console.log('initial render', characters);
+    // console.log('initial render', characters);
 
     return (
-        <div>
-            {characters.map(names => (
-                <StarWarsCard key={names.name} names={names} />
-            ))}
-        </div>
+        <Container>
+            <Row>
+                {characters.map(names => (
+                    <StarWarsCard key={names.name} names={names} />
+                ))}
+            </Row>
+        </Container>
     );
 };
 
