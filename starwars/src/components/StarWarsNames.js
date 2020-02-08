@@ -23,7 +23,7 @@ const StarWarsNames = () => {
     return (
         <div>
             {characters.map(names => (
-                <StarWarsCard data={characters} names={names} />
+                <StarWarsCard key={names.name} names={names} />
             ))}
         </div>
     );
