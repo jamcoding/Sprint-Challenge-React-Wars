@@ -14,7 +14,7 @@ const StarWarsCard = props => {
                     <CardText>Height: {props.names.height}cm</CardText>
                     <CardText>Weight: {props.names.mass}kg</CardText>
                     <CardText>Birth year: {props.names.birth_year}</CardText>
-                    <Button color="info" block>More Info</Button>
+                    <Button color="warning" block>More Info</Button>
                 </CardBody>
             </Card>
         </Col>
